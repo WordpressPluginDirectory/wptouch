@@ -69,9 +69,9 @@
 		<tr>
 			<td colspan="2">
 				<div id="license-settings-area">
-					<input type="text" placeholder="<?php esc_html_e( 'Account E-Mail Address', 'wptouch-pro'  ); ?>" id="license_email" name="<?php echo esc_html(wptouch_admin_get_manual_encoded_setting_name( 'bncid', 'bncid' )); ?>" value="<?php if ( $settings->bncid ) echo esc_html($settings->bncid); else ''; ?>" />
+					<input type="text" placeholder="<?php esc_attr_e( 'Account E-Mail Address', 'wptouch-pro'  ); ?>" id="license_email" name="<?php echo esc_attr(wptouch_admin_get_manual_encoded_setting_name( 'bncid', 'bncid' )); ?>" value="<?php if ( $settings->bncid ) echo esc_attr($settings->bncid); else ''; ?>" />
 
-					<input type="text" placeholder="<?php esc_html_e( 'Product License Key', 'wptouch-pro' ); ?>" id="license_key" name="<?php echo esc_html(wptouch_admin_get_manual_encoded_setting_name( 'bncid', 'bncid' )); ?>" value="<?php if ( $settings->wptouch_license_key ) echo esc_html($settings->wptouch_license_key); else ''; ?>" />
+					<input type="text" placeholder="<?php esc_attr_e( 'Product License Key', 'wptouch-pro' ); ?>" id="license_key" name="<?php echo esc_attr(wptouch_admin_get_manual_encoded_setting_name( 'bncid', 'bncid' )); ?>" value="<?php if ( $settings->wptouch_license_key ) echo esc_attr($settings->wptouch_license_key); else ''; ?>" />
 
 					<div id="activate-license">
 						<?php if ( wptouch_show_renewal_notice() ) { ?>

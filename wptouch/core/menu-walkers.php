@@ -326,44 +326,44 @@ class WPtouch_Walker_Nav_Menu_Edit extends Walker_Nav_Menu {
 					<p class="field-url description description-wide">
 						<label for="edit-menu-item-url-<?php echo esc_html($item_id); ?>">
 							<?php esc_html_e( 'URL' ); ?><br />
-							<input type="text" id="edit-menu-item-url-<?php echo esc_html($item_id); ?>" class="widefat code edit-menu-item-url" name="menu-item-url[<?php echo esc_html($item_id); ?>]" value="<?php echo esc_attr( $item->url ); ?>" />
+							<input type="text" id="edit-menu-item-url-<?php echo esc_attr($item_id); ?>" class="widefat code edit-menu-item-url" name="menu-item-url[<?php echo esc_attr($item_id); ?>]" value="<?php echo esc_attr( $item->url ); ?>" />
 						</label>
 					</p>
 				<?php endif; ?>
 				<p class="description description-thin">
 					<label for="edit-menu-item-title-<?php echo esc_html($item_id); ?>">
 						<?php esc_html_e( 'Navigation Label' ); ?><br />
-						<input type="text" id="edit-menu-item-title-<?php echo esc_html($item_id); ?>" class="widefat edit-menu-item-title" name="menu-item-title[<?php echo esc_html($item_id); ?>]" value="<?php echo esc_attr( $item->title ); ?>" />
+						<input type="text" id="edit-menu-item-title-<?php echo esc_attr($item_id); ?>" class="widefat edit-menu-item-title" name="menu-item-title[<?php echo esc_attr($item_id); ?>]" value="<?php echo esc_attr( $item->title ); ?>" />
 					</label>
 				</p>
 				<p class="description description-thin">
 					<label for="edit-menu-item-attr-title-<?php echo esc_html($item_id); ?>">
 						<?php esc_html_e( 'Title Attribute' ); ?><br />
-						<input type="text" id="edit-menu-item-attr-title-<?php echo esc_html($item_id); ?>" class="widefat edit-menu-item-attr-title" name="menu-item-attr-title[<?php echo esc_html($item_id); ?>]" value="<?php echo esc_attr( $item->post_excerpt ); ?>" />
+						<input type="text" id="edit-menu-item-attr-title-<?php echo esc_attr($item_id); ?>" class="widefat edit-menu-item-attr-title" name="menu-item-attr-title[<?php echo esc_attr($item_id); ?>]" value="<?php echo esc_attr( $item->post_excerpt ); ?>" />
 					</label>
 				</p>
 				<p class="field-link-target description">
 					<label for="edit-menu-item-target-<?php echo esc_html($item_id); ?>">
-						<input type="checkbox" id="edit-menu-item-target-<?php echo esc_html($item_id); ?>" value="_blank" name="menu-item-target[<?php echo esc_html($item_id); ?>]"<?php checked( $item->target, '_blank' ); ?> />
+						<input type="checkbox" id="edit-menu-item-target-<?php echo esc_attr($item_id); ?>" value="_blank" name="menu-item-target[<?php echo esc_attr($item_id); ?>]"<?php checked( $item->target, '_blank' ); ?> />
 						<?php esc_html_e( 'Open link in a new window/tab' ); ?>
 					</label>
 				</p>
 				<p class="field-css-classes description description-thin">
 					<label for="edit-menu-item-classes-<?php echo esc_html($item_id); ?>">
 						<?php esc_html_e( 'CSS Classes (optional)' ); ?><br />
-						<input type="text" id="edit-menu-item-classes-<?php echo esc_html($item_id); ?>" class="widefat code edit-menu-item-classes" name="menu-item-classes[<?php echo esc_html($item_id); ?>]" value="<?php echo esc_attr( implode(' ', $item->classes ) ); ?>" />
+						<input type="text" id="edit-menu-item-classes-<?php echo esc_attr($item_id); ?>" class="widefat code edit-menu-item-classes" name="menu-item-classes[<?php echo esc_attr($item_id); ?>]" value="<?php echo esc_attr( implode(' ', $item->classes ) ); ?>" />
 					</label>
 				</p>
 				<p class="field-xfn description description-thin">
 					<label for="edit-menu-item-xfn-<?php echo esc_html($item_id); ?>">
 						<?php esc_html_e( 'Link Relationship (XFN)' ); ?><br />
-						<input type="text" id="edit-menu-item-xfn-<?php echo esc_html($item_id); ?>" class="widefat code edit-menu-item-xfn" name="menu-item-xfn[<?php echo esc_html($item_id); ?>]" value="<?php echo esc_attr( $item->xfn ); ?>" />
+						<input type="text" id="edit-menu-item-xfn-<?php echo esc_attr($item_id); ?>" class="widefat code edit-menu-item-xfn" name="menu-item-xfn[<?php echo esc_attr($item_id); ?>]" value="<?php echo esc_attr( $item->xfn ); ?>" />
 					</label>
 				</p>
 				<p class="field-description description description-wide">
 					<label for="edit-menu-item-description-<?php echo esc_html($item_id); ?>">
 						<?php esc_html_e( 'Description' ); ?><br />
-						<textarea id="edit-menu-item-description-<?php echo esc_html($item_id); ?>" class="widefat edit-menu-item-description" rows="3" cols="20" name="menu-item-description[<?php echo esc_html($item_id); ?>]"><?php echo esc_html( $item->description ); // textarea_escaped ?></textarea>
+						<textarea id="edit-menu-item-description-<?php echo esc_attr($item_id); ?>" class="widefat edit-menu-item-description" rows="3" cols="20" name="menu-item-description[<?php echo esc_attr($item_id); ?>]"><?php echo esc_html( $item->description ); // textarea_escaped ?></textarea>
 						<span class="description"><?php esc_html_e('The description will be displayed in the menu if the current theme supports it.'); ?></span>
 					</label>
 				</p>
